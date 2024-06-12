@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-06-12T21:23:58.169Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="__ZLtgyE7tcNyOGEfKeW" version="24.3.1" type="device">
+  <diagram name="Page-1" id="Q7FRvWGZt2ce7DXUiE1D">
+    <mxGraphModel dx="903" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="La_PM2x8WjMA9fzmmUMl-1" target="La_PM2x8WjMA9fzmmUMl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-1" value="Lista de urls" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-3" value="URLs&lt;div&gt;database&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="550" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-4" value="Para cada URL na lista" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-5" value="Tem URLs&amp;nbsp;&lt;div&gt;internos&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="340" y="550" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="La_PM2x8WjMA9fzmmUMl-4" target="La_PM2x8WjMA9fzmmUMl-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-7" value="Buscar URLs internos &quot;/&quot;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="340" y="410" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="La_PM2x8WjMA9fzmmUMl-7" target="La_PM2x8WjMA9fzmmUMl-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="La_PM2x8WjMA9fzmmUMl-5" target="La_PM2x8WjMA9fzmmUMl-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="600" />
+              <mxPoint x="240" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-15" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="La_PM2x8WjMA9fzmmUMl-14">
+          <mxGeometry x="-0.0567" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.544;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="La_PM2x8WjMA9fzmmUMl-5" target="La_PM2x8WjMA9fzmmUMl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="La_PM2x8WjMA9fzmmUMl-17" value="Não&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="La_PM2x8WjMA9fzmmUMl-16">
+          <mxGeometry x="-0.006" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
