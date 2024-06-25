@@ -19,6 +19,7 @@ transformers = "^4.41.2"
 datatrove = "^0.2.0"
 xxhash = "^3.4.1"
 datasketch = "^1.6.5"
+aiohttp = "^3.9.5"
 
 
 [tool.poetry.group.dev.dependencies]
