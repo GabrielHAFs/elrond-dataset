@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2024-06-25T20:07:00.712Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.6.3" etag="pN5QI-d_LilNDnnvRtbg" type="device">
+<mxfile host="app.diagrams.net" modified="2024-06-26T12:24:11.798Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="IGhdaqOAVNcaEHVtQika" version="24.6.3" type="device">
   <diagram name="Flowchart" id="0">
-    <mxGraphModel dx="1309" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1069" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="160" y="20" width="80" height="40" as="geometry" />
+        <mxCell id="kl3Qo7PGFrbXa0GzqqIj-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="start" target="analyzeData">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="loadData" value="Load Data" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="110" y="100" width="180" height="60" as="geometry" />
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kl3Qo7PGFrbXa0GzqqIj-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="analyzeData" target="filterContent">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="analyzeData" value="Analyze Data" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="110" y="200" width="180" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="tokenCount" value="Token Count Calculation" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="300" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="filterContent" value="First Filter: Remove Waste Content" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -22,23 +22,11 @@
         <mxCell id="deduplicate" value="Second Filter: Deduplicate Content using MinHash" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="500" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="visualize" value="Visualize Results" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="visualize" value="Analyze and Visualize Results" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="110" y="600" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="end" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="700" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="flow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="start" target="loadData" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="flow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="loadData" target="analyzeData" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="flow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="analyzeData" target="tokenCount" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="flow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="tokenCount" target="filterContent" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="flow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="filterContent" target="deduplicate" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -49,13 +37,7 @@
         <mxCell id="flow7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="visualize" target="end" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="comment1" value="Load JSON data files and convert to DataFrames" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="314" y="100" width="200" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="comment2" value="Analyze data: Number of URLs, sources, text length" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="314" y="200" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="comment3" value="Tokenize articles using GPT-2 tokenizer" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="314" y="300" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="comment4" value="Filter out irrelevant or duplicate content" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -64,16 +46,10 @@
         <mxCell id="comment5" value="Deduplicate content using MinHash algorithm" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="314" y="500" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="comment6" value="Visualize token count and source diversity" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="comment6" value="Get graphs on token distribution and source diversity" style="note;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="314" y="600" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="flow8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="loadData" target="comment1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="flow9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="analyzeData" target="comment2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="flow10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="tokenCount" target="comment3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="flow11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="filterContent" target="comment4" edge="1">
